@@ -141,7 +141,7 @@ header {
 .banner>a:nth-child(3)>img {
   position: fixed;
   top:90%; 
-  left: 85%;
+  left: 95.5%;
   z-index: 5;
   width: 70px;
   height: 70px;
