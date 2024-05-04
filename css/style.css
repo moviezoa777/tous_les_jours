@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.container {
+  background-color: #0d4633;
+}
+.top-h {
+  display: flex;
+  justify-content:flex-start;
+  gap: 15rem;
+  margin-left: 13rem; 
+}
+.sns {
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+.sns>ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+.sns li:nth-of-type(4) img{
+  width: 45px;
+  position: relative;
+  bottom: 0.5rem;
+  right: 0.1rem;
+}
+.logo {
+  height: 120px; 
+  display: flex;
+  align-items: center; 
+}
+.side-menu {
+  height: 120px;   
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: flex-end;
+}
+.side-menu>ul {
+  display: flex;
+  justify-content: space-between; 
+  color: white;
+  gap: 0.5rem;
+}
+.side-menu li {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+.side-menu li:nth-child(4) {
+  border: 1px solid white;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+}
+.side-image img {
+  position: relative;
+  bottom: 1.5rem;
+  left: 0.5rem;
+}
+.navi>ul {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 17px;
+  gap: 3rem;
+}
+.navi li {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+/* gap속성은 부모요소에 주어야 한다. */
+/* body태그의 크기 */
+.line {
+  border: 0;
+  height: 1px; 
+  background-color: rgb(199, 198, 198); 
+}
+
+/* ==================== banner====================== */
+.banner {
+  width: 100%;
+  height: 90vh;
+}
+.banner img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  width: 100%;
+  height: 90vh;
+}
+
+
+/* ================= main > content01===================*/
+main {
+  background-color: #f7f0da;
+  width: 100%;
+  padding-top: 4rem;
+} 
+.content01 {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.container01 img {
+  width: 394px; 
+  height: 407px;
+}
+.container02 {
+  display: grid;
+  grid-template-columns: 350px 240px;
+  grid-template-rows: 200px 200px;
+  position: relative;
+  background-color: white;
+}
+.conbox01 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.conbox01 img {
+  width: 250px;
+}
+.conbox01>p:nth-child(2) {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+.conbox02 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.conbox02 img {
+  width: 150px;
+}
+.conbox02>p:nth-child(2) {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+.conbox03 {
+  grid-column: 2/3;
+  grid-row: 2/3; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.conbox03 img {
+  width: 150px;
+}
+.conbox03>p:nth-child(2) {
+  font-weight: bold;
+}
+
+
+/* ================= main > content02===================*/
+.content02 {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.content02-right img {
+  width: 590px;
+}
+.content02-left img {
+  width: 394px;
+  height: 170px;
+}
+
+
+/* ================= main > content03===================*/
+.content03 {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.content03-left img {
+  width: 592px;
+}
+.content03-right img {
+  height: 261px;
+}
+
+
+/* ================= main > content04===================*/
+.content04 {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 5rem;
+}
+.content04-right {
+  background-color: white;
+  font-size: 14px;
+  width: 398px;
+  height: 131px;
+}
+.content04-right>img {
+  margin: 1rem 0 1rem 1rem; 
+}
+.content04-right p {
+  margin-left: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+/* background-image ==> 다시 보기 */
+/* 이미지 사이즈 % 사용시에 기준이 되는 것??? */
+/* 요소를 상하좌우 가운데로 정렬하기 */
+
+
+/* ================= main > content05===================*/
+.family-site {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 16rem;
+  padding: 0.5rem 0; 
+}
+.family-site>li {
+  margin-right: 0.5rem;
+}
+
+
+/* ================= footer ===================*/
+footer {
+  background-color: #2e2f2e;
+  font-size: 14px;
+  color: white
+}
+.footer-top {
+  margin-left: 16rem;
+}
+.f-list {
+  display: flex;
+  justify-content: flex-start;
+  padding-top:1.5rem;
+  margin-bottom: 1.5rem;
+}
+.footer-middle {
+  margin-left: 16rem;
+  margin-bottom: 1.5rem;
+}
+.footer-bottom {
+  margin-left: 16rem;
+  padding-bottom: 1.5rem;
+}
